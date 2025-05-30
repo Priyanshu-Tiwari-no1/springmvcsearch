@@ -10,68 +10,78 @@ public class Student {
     private String emailAddress;
     private String gender;
     private List<String> courses;
-    private String phoneNumber; // Changed from Long to String
+    private String phoneNumber; // changed from Long to String
 
-    public String getFirstName() {
-        return firstName;
-    }
+    private Address address;
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+	public String getFirstName() {
+		return firstName;
+	}
 
-    public String getLastName() {
-        return lastName;
-    }
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+	public String getLastName() {
+		return lastName;
+	}
 
-    public Date getBirthdayDate() {
-        return birthdayDate;
-    }
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 
-    public void setBirthdayDate(Date birthdayDate) {
-        this.birthdayDate = birthdayDate;
-    }
+	public Date getBirthdayDate() {
+		return birthdayDate;
+	}
 
-    public String getEmailAddress() {
-        return emailAddress;
-    }
+	public void setBirthdayDate(Date birthdayDate) {
+		this.birthdayDate = birthdayDate;
+	}
 
-    public void setEmailAddress(String emailAddress) {
-        this.emailAddress = emailAddress;
-    }
+	public String getEmailAddress() {
+		return emailAddress;
+	}
 
-    public String getGender() {
-        return gender;
-    }
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
+	public String getGender() {
+		return gender;
+	}
 
-    public List<String> getCourses() {
-        return courses;
-    }
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 
-    public void setCourses(List<String> courses) {
-        this.courses = courses;
-    }
+	public List<String> getCourses() {
+		return courses;
+	}
 
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
+	public void setCourses(List<String> courses) {
+		this.courses = courses;
+	}
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
 
-    @Override
-    public String toString() {
-        return "Student [firstName=" + firstName + ", lastName=" + lastName + ", birthdayDate=" + birthdayDate
-                + ", emailAddress=" + emailAddress + ", gender=" + gender + ", courses=" + courses + ", phoneNumber="
-                + phoneNumber + "]";
-    }
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", birthdayDate=" + birthdayDate
+				+ ", emailAddress=" + emailAddress + ", gender=" + gender + ", courses=" + courses + ", phoneNumber="
+				+ phoneNumber + ", address=" + address + "]";
+	}
 }

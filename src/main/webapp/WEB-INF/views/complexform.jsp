@@ -13,7 +13,7 @@
 
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
+        <div class="col-md-10 col-lg-8">
             <div class="card shadow">
                 <div class="card-header bg-primary text-white text-center">
                     <h4>Registration Form</h4>
@@ -63,6 +63,29 @@
                                 <label for="phoneNumber">Phone Number</label>
                                 <form:input path="phoneNumber" cssClass="form-control" id="phoneNumber" />
                             </div>
+                        </div>
+                        
+                        <div class="card">
+                          <div class="card-body">
+                              <p>Your address</p>
+                              <div class="form-group">
+                                 <input 
+                                        name="address.street"
+                                        type="text" 
+                                        class="form-control" 
+                                        placeholder="Enter street"
+                                        />
+                              </div>
+                              
+                               <div class="form-group">
+                                 <input 
+                                       name="address.city"
+                                       type="text" 
+                                       class="form-control" 
+                                       placeholder="Enter city" 
+                                       />
+                              </div>
+                          </div>
                         </div>
 
                         <div class="form-group">

@@ -17,6 +17,8 @@
     <li>Email: ${student.emailAddress}</li>
     <li>Phone Number: ${student.phoneNumber}</li>
     <li>Gender: ${student.gender}</li>
+    <li>Address of Street: ${student.address.street }</li>
+    <li>Address of city: ${student.address.city }</li>
     <li>Courses:
         <ul>
             <c:forEach var="course" items="${student.courses}">
